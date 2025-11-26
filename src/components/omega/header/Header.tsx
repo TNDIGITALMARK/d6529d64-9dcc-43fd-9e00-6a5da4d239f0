@@ -18,11 +18,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <Image
-              src="/generated/omega-logo.png"
-              alt="Omega Contracting"
+              src="/currentImgContext/bryson-payne-logo.png"
+              alt="Bryson Payne"
               width={200}
               height={60}
-              className="h-14 w-auto brightness-0 invert transition-transform group-hover:scale-105"
+              className="h-14 w-auto transition-transform group-hover:scale-105"
             />
           </Link>
 
