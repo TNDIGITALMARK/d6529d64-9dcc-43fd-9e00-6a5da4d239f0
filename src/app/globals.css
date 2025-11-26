@@ -1,136 +1,137 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap');
 
 /*
 ============================================
-MODERN DESIGN SYSTEM
-Contemporary color palette with excellent contrast
+PREMIUM DESIGN SYSTEM - OMEGA CONTRACTING
+Sophisticated, high-end construction aesthetic
 ============================================
 
-COLOR PALETTE (MODERN):
-- Primary Deep Blue: #0F172A (217, 91%, 10%) - Professional, modern
-- Secondary Vibrant Blue: #3B82F6 (217, 91%, 60%) - Engaging, trustworthy
-- Accent Electric Blue: #06B6D4 (187, 92%, 43%) - Fresh, energetic
-- Success Green: #10B981 (160, 84%, 39%) - Positive actions
-- Background Soft Gray: #F8FAFC (210, 20%, 98%) - Clean, modern
-- Surface White: #FFFFFF (0, 0%, 100%) - Cards, elevated content
-- Text Dark: #1E293B (217, 33%, 17%) - Excellent readability
-- Text Muted: #64748B (215, 16%, 47%) - Secondary text
+COLOR PALETTE (LUXURY):
+- Primary Charcoal: #1A1A1A (0, 0%, 10%) - Bold, sophisticated
+- Secondary Bronze: #B8860B (43, 89%, 38%) - Premium, craftsmanship
+- Accent Gold: #D4AF37 (45, 64%, 53%) - Luxury, excellence
+- Warm Stone: #F5F5DC (60, 56%, 91%) - Natural, elegant
+- Deep Earth: #2C2416 (40, 29%, 13%) - Grounded, trustworthy
+- Soft Cream: #FAFAF7 (60, 25%, 98%) - Clean, refined
+- Rich Brown: #4A3822 (33, 38%, 21%) - Timeless, solid
+- Light Gold: #F4E4C1 (44, 65%, 85%) - Subtle elegance
 
 TYPOGRAPHY:
-- Font: Inter (sans-serif)
-- Base: 16px / 1.6 line height
-- Headings: Semibold to Bold (600-700), normal case, clean tracking
+- Display Font: Playfair Display (serif) - Headlines, elegance
+- Body Font: Inter (sans-serif) - Clean, modern readability
+- Base: 16px / 1.7 line height
+- Headings: Bold serif (Playfair), commanding presence
 
 SPACING SYSTEM:
-- Section padding: 64px vertical
-- Card gaps: 24px
-- Button padding: 12px 24px
-- Container max-width: 1200px
+- Section padding: 96px vertical (luxurious breathing room)
+- Card gaps: 32px (generous spacing)
+- Button padding: 16px 32px (substantial feel)
+- Container max-width: 1280px
 
 COMPONENT STYLES:
-- Border radius: 8px (modern, friendly)
-- Shadows: Soft, layered depth
-- Buttons: Solid colors, subtle hover effects
-- Cards: White bg, subtle shadow, rounded
+- Border radius: 2px (sharp, architectural)
+- Shadows: Dramatic depth with warm tones
+- Buttons: Bold with metallic accents
+- Cards: Cream backgrounds, bold borders
 ============================================
 */
 
 :root {
-  /* MODERN COLOR SYSTEM */
-  /* Primary - Deep Blue (Professional) */
-  --primary: 217 91% 10%;
+  /* PREMIUM COLOR SYSTEM */
+  /* Primary - Charcoal Black (Sophisticated) */
+  --primary: 0 0% 10%;
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary - Vibrant Blue (Trustworthy) */
-  --secondary: 217 91% 60%;
+  /* Secondary - Bronze (Craftsmanship) */
+  --secondary: 43 89% 38%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Accent - Electric Blue (Energetic) */
-  --accent: 187 92% 43%;
-  --accent-foreground: 0 0% 100%;
+  /* Accent - Gold (Premium Excellence) */
+  --accent: 45 64% 53%;
+  --accent-foreground: 0 0% 10%;
 
-  /* Success - Fresh Green */
-  --success: 160 84% 39%;
-  --success-foreground: 0 0% 100%;
+  /* Success - Muted Gold */
+  --success: 45 64% 53%;
+  --success-foreground: 0 0% 10%;
 
   /* Backgrounds */
-  --background: 210 20% 98%; /* Soft gray - modern and clean */
-  --foreground: 217 33% 17%; /* Dark slate - excellent contrast */
+  --background: 60 25% 98%; /* Soft cream - luxurious */
+  --foreground: 0 0% 10%; /* Charcoal - strong contrast */
 
   /* Cards */
-  --card: 0 0% 100%; /* Pure white */
-  --card-foreground: 217 33% 17%;
+  --card: 60 56% 91%; /* Warm stone - natural elegance */
+  --card-foreground: 0 0% 10%;
 
   /* Muted */
-  --muted: 214 32% 91%;
-  --muted-foreground: 215 16% 47%;
+  --muted: 44 65% 85%;
+  --muted-foreground: 33 38% 21%;
 
   /* Popovers */
-  --popover: 0 0% 100%;
-  --popover-foreground: 217 33% 17%;
+  --popover: 60 56% 91%;
+  --popover-foreground: 0 0% 10%;
 
   /* Destructive */
-  --destructive: 0 84% 60%;
+  --destructive: 0 84% 45%;
   --destructive-foreground: 0 0% 100%;
 
   /* Borders */
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
-  --ring: 217 91% 60%; /* Vibrant blue for focus */
+  --border: 43 89% 38%;
+  --input: 43 89% 38%;
+  --ring: 45 64% 53%; /* Gold for focus */
 
-  /* Border Radius - Modern (8px) */
-  --radius: 0.5rem;
+  /* Border Radius - Architectural (2px sharp) */
+  --radius: 0.125rem;
 
-  /* Sidebar (modern blue theme) */
-  --sidebar-background: 217 91% 10%;
+  /* Sidebar (luxury theme) */
+  --sidebar-background: 0 0% 10%;
   --sidebar-foreground: 0 0% 100%;
-  --sidebar-primary: 187 92% 43%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 217 91% 15%;
+  --sidebar-primary: 45 64% 53%;
+  --sidebar-primary-foreground: 0 0% 10%;
+  --sidebar-accent: 40 29% 13%;
   --sidebar-accent-foreground: 0 0% 100%;
-  --sidebar-border: 217 91% 15%;
-  --sidebar-ring: 187 92% 43%;
+  --sidebar-border: 40 29% 13%;
+  --sidebar-ring: 45 64% 53%;
 }
 
 .dark {
-  /* Modern dark mode with excellent contrast */
-  --background: 217 33% 10%;
-  --foreground: 210 20% 98%;
+  /* Premium dark mode with warm accents */
+  --background: 0 0% 10%;
+  --foreground: 60 25% 98%;
 
-  --card: 217 33% 12%;
-  --card-foreground: 210 20% 98%;
+  --card: 40 29% 13%;
+  --card-foreground: 60 25% 98%;
 
-  --popover: 217 33% 12%;
-  --popover-foreground: 210 20% 98%;
+  --popover: 40 29% 13%;
+  --popover-foreground: 60 25% 98%;
 
-  --primary: 187 92% 43%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 45 64% 53%;
+  --primary-foreground: 0 0% 10%;
 
-  --secondary: 217 91% 60%;
+  --secondary: 43 89% 38%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 217 33% 20%;
-  --muted-foreground: 215 16% 65%;
+  --muted: 40 29% 20%;
+  --muted-foreground: 44 65% 70%;
 
-  --accent: 187 92% 43%;
-  --accent-foreground: 0 0% 100%;
+  --accent: 45 64% 53%;
+  --accent-foreground: 0 0% 10%;
 
-  --destructive: 0 84% 60%;
+  --destructive: 0 84% 45%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 217 33% 20%;
-  --input: 217 33% 20%;
-  --ring: 187 92% 43%;
+  --border: 43 89% 38%;
+  --input: 40 29% 20%;
+  --ring: 45 64% 53%;
 
-  --sidebar-background: 217 33% 8%;
-  --sidebar-foreground: 210 20% 98%;
-  --sidebar-primary: 187 92% 43%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 217 33% 15%;
-  --sidebar-accent-foreground: 210 20% 98%;
-  --sidebar-border: 217 33% 20%;
-  --sidebar-ring: 187 92% 43%;
+  --sidebar-background: 0 0% 8%;
+  --sidebar-foreground: 60 25% 98%;
+  --sidebar-primary: 45 64% 53%;
+  --sidebar-primary-foreground: 0 0% 10%;
+  --sidebar-accent: 40 29% 15%;
+  --sidebar-accent-foreground: 60 25% 98%;
+  --sidebar-border: 40 29% 20%;
+  --sidebar-ring: 45 64% 53%;
 }
 
 @theme {
@@ -221,68 +222,78 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.7;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-feature-settings: "rlig" 1, "calt" 1;
+  font-feature-settings: "rlig" 1, "calt" 1, "kern" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
-/* MODERN TYPOGRAPHY SCALE */
+/* PREMIUM TYPOGRAPHY SCALE - SERIF HEADLINES */
 h1 {
-  font-size: 3rem; /* 48px */
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.025em;
-  margin: 0 0 1rem 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem; /* 64px - commanding presence */
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.5rem 0;
   color: hsl(var(--foreground));
 }
 
 h2 {
-  font-size: 2.25rem; /* 36px */
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem; /* 48px - strong hierarchy */
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.875rem 0;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.25rem 0;
   color: hsl(var(--foreground));
 }
 
 h3 {
-  font-size: 1.875rem; /* 30px */
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-  margin: 0 0 0.75rem 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.25rem; /* 36px - elegant authority */
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem 0;
   color: hsl(var(--foreground));
 }
 
 h4 {
-  font-size: 1.5rem; /* 24px */
-  font-weight: 600;
-  line-height: 1.4;
-  margin: 0 0 0.625rem 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.75rem; /* 28px - refined */
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.875rem 0;
   color: hsl(var(--foreground));
 }
 
 h5 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0 0 0.5rem 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.375rem; /* 22px */
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0 0 0.75rem 0;
   color: hsl(var(--foreground));
 }
 
 h6 {
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* 18px */
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.625rem 0;
   color: hsl(var(--foreground));
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 p {
@@ -348,23 +359,28 @@ select:focus {
   box-shadow: 0 0 0 3px hsla(var(--primary) / 0.1);
 }
 
-/* Modern layered shadows for depth */
+/* Premium dramatic shadows with warm undertones */
 .shadow-sm {
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  box-shadow: 0 1px 3px 0 rgb(43 34 22 / 0.08);
 }
 
 .shadow {
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.08);
+  box-shadow: 0 2px 6px 0 rgb(43 34 22 / 0.12), 0 1px 3px -1px rgb(43 34 22 / 0.08);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.08);
+  box-shadow: 0 6px 12px -2px rgb(43 34 22 / 0.15), 0 3px 6px -3px rgb(43 34 22 / 0.1);
 }
 
 .shadow-lg {
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+  box-shadow: 0 15px 30px -5px rgb(43 34 22 / 0.18), 0 6px 12px -6px rgb(43 34 22 / 0.12);
 }
 
 .shadow-xl {
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
+  box-shadow: 0 25px 50px -8px rgb(43 34 22 / 0.22), 0 10px 20px -8px rgb(43 34 22 / 0.15);
+}
+
+/* Premium gold glow effect */
+.shadow-gold {
+  box-shadow: 0 0 20px 2px rgb(212 175 55 / 0.25), 0 4px 12px 0 rgb(184 134 11 / 0.2);
 }

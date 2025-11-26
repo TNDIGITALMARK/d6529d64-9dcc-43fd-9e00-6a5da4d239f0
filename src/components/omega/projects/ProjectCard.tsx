@@ -8,23 +8,40 @@ interface ProjectCardProps {
 
 export function ProjectCard({ imageSrc, title, category }: ProjectCardProps) {
   return (
-    <div className="group relative overflow-hidden bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-      <div className="aspect-[4/3] relative">
+    <div className="group relative overflow-hidden bg-[hsl(40,29%,13%)] shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-[hsl(43,89%,38%)]/30">
+      <div className="aspect-[4/3] relative overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-[hsl(217,91%,10%)]/0 group-hover:bg-[hsl(217,91%,10%)]/85 transition-all duration-300 flex items-center justify-center">
-          <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">
-            <h4 className="text-xl font-semibold mb-2">{title}</h4>
-            <p className="text-sm font-medium tracking-wide text-[hsl(187,92%,43%)]">{category}</p>
-          </div>
+        {/* Overlay with premium gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(0,0%,10%)]/95 via-[hsl(0,0%,10%)]/40 to-transparent opacity-60 group-hover:opacity-90 transition-all duration-500"></div>
+
+        {/* Content overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-500">
+          {/* Gold divider */}
+          <div className="w-16 h-px bg-[hsl(45,64%,53%)] mb-4"></div>
+
+          <h4 className="text-2xl font-bold mb-3 text-white text-center">{title}</h4>
+
+          <div className="w-12 h-0.5 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mb-3"></div>
+
+          <p className="text-sm font-semibold tracking-widest text-[hsl(45,64%,53%)] uppercase">
+            {category}
+          </p>
         </div>
       </div>
-      <div className="p-4 bg-gradient-to-r from-[hsl(217,91%,60%)] to-[hsl(187,92%,43%)] text-white">
-        <p className="font-medium text-sm">{category}</p>
+
+      {/* Bottom bar with category */}
+      <div className="p-4 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] relative overflow-hidden group-hover:from-[hsl(45,64%,53%)] group-hover:to-[hsl(45,64%,58%)] transition-all duration-500">
+        <p className="font-bold text-sm text-[hsl(0,0%,10%)] uppercase tracking-wider text-center">
+          {category}
+        </p>
+
+        {/* Shine effect */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
       </div>
     </div>
   );
