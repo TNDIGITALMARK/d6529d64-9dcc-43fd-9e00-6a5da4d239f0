@@ -384,3 +384,161 @@ select:focus {
 .shadow-gold {
   box-shadow: 0 0 20px 2px rgb(212 175 55 / 0.25), 0 4px 12px 0 rgb(184 134 11 / 0.2);
 }
+
+/* ========================================
+   TEXT ON DARK BACKGROUNDS - UTILITY CLASSES
+   ======================================== */
+
+/*
+ * PRIMARY UTILITY: Force white text on dark backgrounds
+ * Use this class on any element with a dark background to ensure text is readable
+ */
+.text-on-dark {
+  color: hsl(0 0% 100%) !important;
+}
+
+/* Variant: Slightly transparent white for secondary text on dark backgrounds */
+.text-on-dark-muted {
+  color: hsl(0 0% 100% / 0.8) !important;
+}
+
+/* Variant: More transparent white for tertiary text on dark backgrounds */
+.text-on-dark-subtle {
+  color: hsl(0 0% 100% / 0.6) !important;
+}
+
+/*
+ * AUTOMATIC TEXT COLOR FOR DARK BACKGROUND CONTAINERS
+ * Apply these classes to parent containers with dark backgrounds
+ * All child text elements will inherit white text automatically
+ */
+.dark-bg-container {
+  color: hsl(0 0% 100%);
+}
+
+.dark-bg-container h1,
+.dark-bg-container h2,
+.dark-bg-container h3,
+.dark-bg-container h4,
+.dark-bg-container h5,
+.dark-bg-container h6 {
+  color: hsl(0 0% 100%);
+}
+
+.dark-bg-container p {
+  color: hsl(0 0% 100% / 0.9);
+}
+
+.dark-bg-container a {
+  color: hsl(45 64% 53%);
+}
+
+.dark-bg-container a:hover {
+  color: hsl(45 64% 63%);
+}
+
+/*
+ * SPECIFIC DARK BACKGROUND HELPERS
+ * Use these for specific brand dark colors
+ */
+.bg-charcoal {
+  background-color: hsl(0 0% 10%);
+  color: hsl(0 0% 100%);
+}
+
+.bg-deep-earth {
+  background-color: hsl(40 29% 13%);
+  color: hsl(0 0% 100%);
+}
+
+.bg-rich-brown {
+  background-color: hsl(33 38% 21%);
+  color: hsl(0 0% 100%);
+}
+
+/*
+ * HEADINGS ON DARK BACKGROUNDS
+ * Override default heading colors when on dark backgrounds
+ */
+.dark-bg-container h1,
+.bg-charcoal h1,
+.bg-deep-earth h1,
+.bg-rich-brown h1,
+[class*="bg-[hsl(0,0%,10%)]"] h1,
+[class*="bg-[hsl(40,29%,13%)]"] h1 {
+  color: hsl(0 0% 100%) !important;
+}
+
+.dark-bg-container h2,
+.bg-charcoal h2,
+.bg-deep-earth h2,
+.bg-rich-brown h2,
+[class*="bg-[hsl(0,0%,10%)]"] h2,
+[class*="bg-[hsl(40,29%,13%)]"] h2 {
+  color: hsl(0 0% 100%) !important;
+}
+
+.dark-bg-container h3,
+.bg-charcoal h3,
+.bg-deep-earth h3,
+.bg-rich-brown h3,
+[class*="bg-[hsl(0,0%,10%)]"] h3,
+[class*="bg-[hsl(40,29%,13%)]"] h3 {
+  color: hsl(0 0% 100%) !important;
+}
+
+.dark-bg-container h4,
+.bg-charcoal h4,
+.bg-deep-earth h4,
+.bg-rich-brown h4,
+[class*="bg-[hsl(0,0%,10%)]"] h4,
+[class*="bg-[hsl(40,29%,13%)]"] h4 {
+  color: hsl(0 0% 100%) !important;
+}
+
+.dark-bg-container h5,
+.bg-charcoal h5,
+.bg-deep-earth h5,
+.bg-rich-brown h5,
+[class*="bg-[hsl(0,0%,10%)]"] h5,
+[class*="bg-[hsl(40,29%,13%)]"] h5 {
+  color: hsl(0 0% 100%) !important;
+}
+
+.dark-bg-container h6,
+.bg-charcoal h6,
+.bg-deep-earth h6,
+.bg-rich-brown h6,
+[class*="bg-[hsl(0,0%,10%)]"] h6,
+[class*="bg-[hsl(40,29%,13%)]"] h6 {
+  color: hsl(0 0% 100%) !important;
+}
+
+/*
+ * PARAGRAPHS AND TEXT ON DARK BACKGROUNDS
+ */
+.dark-bg-container p,
+.bg-charcoal p,
+.bg-deep-earth p,
+.bg-rich-brown p,
+[class*="bg-[hsl(0,0%,10%)]"] p,
+[class*="bg-[hsl(40,29%,13%)]"] p {
+  color: hsl(0 0% 100% / 0.9) !important;
+}
+
+/*
+ * LINKS ON DARK BACKGROUNDS
+ */
+.dark-bg-container a,
+.bg-charcoal a,
+.bg-deep-earth a,
+.bg-rich-brown a {
+  color: hsl(45 64% 53%);
+}
+
+.dark-bg-container a:hover,
+.bg-charcoal a:hover,
+.bg-deep-earth a:hover,
+.bg-rich-brown a:hover {
+  color: hsl(45 64% 63%);
+}
