@@ -49,7 +49,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-6"></div>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto font-light">
+            <p className="text-xl text-white/80 font-light">
               Ready to start your project? Get a free estimate today!
             </p>
           </div>

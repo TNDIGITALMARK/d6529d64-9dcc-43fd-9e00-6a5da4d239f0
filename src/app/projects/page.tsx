@@ -20,7 +20,7 @@ export default function ProjectsPage() {
               Our Projects
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-6"></div>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto font-light">
+            <p className="text-xl text-white/80 font-light">
               Showcasing our commitment to excellence through successful residential and commercial projects across Metro Atlanta
             </p>
           </div>

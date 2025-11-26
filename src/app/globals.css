@@ -549,6 +549,24 @@ select:focus {
 }
 
 /*
+ * STRONG/BOLD TEXT ON DARK BACKGROUNDS
+ */
+.dark-bg-container strong,
+.dark-bg-container b,
+.bg-charcoal strong,
+.bg-charcoal b,
+.bg-deep-earth strong,
+.bg-deep-earth b,
+.bg-rich-brown strong,
+.bg-rich-brown b,
+[class*="bg-[hsl(0,0%,10%)]"] strong,
+[class*="bg-[hsl(0,0%,10%)]"] b,
+[class*="bg-[hsl(40,29%,13%)]"] strong,
+[class*="bg-[hsl(40,29%,13%)]"] b {
+  color: hsl(0 0% 100%) !important;
+}
+
+/*
  * LINKS ON DARK BACKGROUNDS
  */
 .dark-bg-container a,

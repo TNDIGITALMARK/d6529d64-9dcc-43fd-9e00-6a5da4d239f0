@@ -101,7 +101,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-6"></div>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto font-light">
+            <p className="text-xl text-white/80 font-light">
               Comprehensive construction and renovation services for residential and commercial projects
             </p>
           </div>
@@ -234,39 +234,6 @@ export default function ServicesPage() {
                   We use only premium materials and trusted suppliers for lasting results
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section - Premium Gold Gradient */}
-        <section className="py-24 bg-gradient-to-br from-[hsl(60,25%,98%)] to-[hsl(60,56%,94%)] text-center relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-[0.03]" style={{
-            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, hsl(43, 89%, 38%) 35px, hsl(43, 89%, 38%) 36px)',
-          }}></div>
-
-          <div className="container mx-auto max-w-[1280px] px-6 lg:px-8 relative z-10">
-            <h6 className="text-[hsl(43,89%,38%)] mb-4 uppercase tracking-widest text-sm font-bold">Get Started</h6>
-            <h2 className="text-4xl md:text-5xl font-bold text-[hsl(0,0%,10%)] mb-6">
-              Ready to Start Your Project?
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-8"></div>
-            <p className="text-xl text-[hsl(33,38%,21%)] mb-12 max-w-2xl mx-auto font-light">
-              Contact us today for a free consultation and estimate. Let&apos;s bring your vision to life!
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link
-                href="/contact"
-                className="bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] hover:from-[hsl(45,64%,53%)] hover:to-[hsl(45,64%,58%)] text-[hsl(0,0%,10%)] px-12 py-5 font-bold text-base uppercase tracking-wider transition-all shadow-gold hover:shadow-xl"
-              >
-                Get Free Estimate
-              </Link>
-              <a
-                href="tel:555-123-687"
-                className="border-2 border-[hsl(43,89%,38%)] text-[hsl(0,0%,10%)] hover:bg-[hsl(43,89%,38%)]/10 px-12 py-5 font-bold text-base uppercase tracking-wider transition-all"
-              >
-                Call: 555-123-687
-              </a>
             </div>
           </div>
         </section>

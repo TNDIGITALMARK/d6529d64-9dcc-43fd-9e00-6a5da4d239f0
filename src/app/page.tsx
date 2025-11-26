@@ -4,6 +4,7 @@ import { Footer } from '@/components/omega/footer/Footer';
 import { ServiceCard } from '@/components/omega/services/ServiceCard';
 import { ProjectCard } from '@/components/omega/projects/ProjectCard';
 import { TestimonialCard } from '@/components/omega/testimonials/TestimonialCard';
+import { HeroSlideshow } from '@/components/omega/hero/HeroSlideshow';
 import { Home, Building2, PaintBucket, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
@@ -13,17 +14,15 @@ export default function HomePage() {
 
       <main className="flex-grow">
         {/* Hero Section - Premium Redesign */}
-        <section
-          className="relative min-h-[85vh] bg-cover bg-center flex items-center overflow-hidden"
-          style={{
-            backgroundImage: "linear-gradient(135deg, rgba(26, 26, 26, 0.92) 0%, rgba(44, 36, 22, 0.85) 100%), url('/generated/hero-construction.png')",
-          }}
-        >
+        <section className="relative min-h-[85vh] flex items-center overflow-hidden py-12">
+          {/* Slideshow Background */}
+          <HeroSlideshow />
+
           {/* Decorative Gold Line */}
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[hsl(45,64%,53%)] to-transparent"></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[hsl(45,64%,53%)] to-transparent z-10"></div>
 
           <div className="container mx-auto max-w-[1280px] px-6 lg:px-8 relative z-10">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto text-center">
               {/* Premium Badge */}
               <div className="inline-flex items-center space-x-2 mb-6 px-4 py-2 bg-[hsl(45,64%,53%)]/10 border border-[hsl(45,64%,53%)]/30 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-[hsl(45,64%,53%)] rounded-full animate-pulse"></div>
@@ -36,16 +35,16 @@ export default function HomePage() {
                 Excellence
               </h1>
 
-              <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mb-8"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mb-8 mx-auto"></div>
 
               <p className="text-2xl md:text-3xl mb-4 font-light text-[hsl(45,64%,53%)] leading-relaxed">
                 Premium Construction & Renovation
               </p>
-              <p className="text-lg mb-10 text-[hsl(45,64%,53%)] font-light max-w-xl">
+              <p className="text-lg mb-10 text-[hsl(45,64%,53%)] font-light">
                 Transforming spaces with 25+ years of uncompromising craftsmanship and architectural precision
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
                   className="group inline-flex items-center justify-center bg-[hsl(45,64%,53%)] hover:bg-[hsl(45,64%,58%)] text-[hsl(0,0%,10%)] px-10 py-5 font-bold text-base transition-all shadow-gold hover:shadow-xl uppercase tracking-wider relative overflow-hidden"
@@ -64,9 +63,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-
-          {/* Bottom Decorative Element */}
-          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[hsl(60,25%,98%)] to-transparent"></div>
         </section>
 
         {/* Services Section - Premium Redesign */}
@@ -84,7 +80,7 @@ export default function HomePage() {
                 Our Expertise
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-6"></div>
-              <p className="text-[hsl(33,38%,21%)] text-lg max-w-2xl mx-auto font-light">
+              <p className="text-[hsl(33,38%,21%)] text-lg font-light">
                 Delivering exceptional craftsmanship across residential and commercial projects
               </p>
             </div>
@@ -122,7 +118,7 @@ export default function HomePage() {
                 Featured Work
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mx-auto mb-6"></div>
-              <p className="text-white/70 text-lg max-w-2xl mx-auto font-light">
+              <p className="text-white/70 text-lg font-light">
                 Explore our recent projects showcasing precision and artistry
               </p>
             </div>
