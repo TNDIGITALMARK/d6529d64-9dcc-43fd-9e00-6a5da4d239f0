@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { QueryProvider } from "@/components/query-provider";
@@ -8,19 +8,16 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Omega Contracting - Quality Construction Services | Metro Atlanta",
+  description: "Licensed, bonded & insured general contractor serving Metro Atlanta. Specializing in kitchen remodeling, bathroom renovations, home additions, and commercial projects. 25+ years experience. Get a free estimate today!",
+  keywords: "general contractor, construction, Atlanta, kitchen remodeling, bathroom renovation, home addition, commercial construction, licensed contractor",
 };
 
 export default function RootLayout({
@@ -34,7 +31,7 @@ export default function RootLayout({
 
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         <QueryProvider>
           <ZyloProvider>
