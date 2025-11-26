@@ -30,18 +30,18 @@ export default function HomePage() {
                 <span className="text-[hsl(45,64%,53%)] text-sm font-semibold tracking-wide uppercase">Licensed & Insured</span>
               </div>
 
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[0.95] text-white">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[0.95] text-[hsl(45,64%,53%)]">
                 Crafting
                 <br />
-                <span className="text-[hsl(45,64%,53%)]">Excellence</span>
+                Excellence
               </h1>
 
               <div className="w-24 h-1 bg-gradient-to-r from-[hsl(43,89%,38%)] to-[hsl(45,64%,53%)] mb-8"></div>
 
-              <p className="text-2xl md:text-3xl mb-4 font-light text-white/95 leading-relaxed">
+              <p className="text-2xl md:text-3xl mb-4 font-light text-[hsl(45,64%,53%)] leading-relaxed">
                 Premium Construction & Renovation
               </p>
-              <p className="text-lg mb-10 text-white/80 font-light max-w-xl">
+              <p className="text-lg mb-10 text-[hsl(45,64%,53%)] font-light max-w-xl">
                 Transforming spaces with 25+ years of uncompromising craftsmanship and architectural precision
               </p>
 
