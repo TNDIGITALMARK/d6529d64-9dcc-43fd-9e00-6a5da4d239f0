@@ -5,7 +5,7 @@ import { ServiceCard } from '@/components/omega/services/ServiceCard';
 import { ProjectCard } from '@/components/omega/projects/ProjectCard';
 import { TestimonialCard } from '@/components/omega/testimonials/TestimonialCard';
 import { HeroSlideshow } from '@/components/omega/hero/HeroSlideshow';
-import { Home, Building2, PaintBucket, ArrowRight } from 'lucide-react';
+import { Home, Building2, PaintBucket, Wrench, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -85,7 +85,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
               <ServiceCard
                 icon={Home}
                 title="Residential Construction"
@@ -98,8 +98,13 @@ export default function HomePage() {
               />
               <ServiceCard
                 icon={PaintBucket}
-                title="Renovations"
-                description="Interior and exterior renovations, roofing services, flooring installation, and complete property makeovers."
+                title="Painting & Drywall"
+                description="Professional painting, drywall installation, and finishing services for interior and exterior projects."
+              />
+              <ServiceCard
+                icon={Wrench}
+                title="Property Services"
+                description="Property management, landscaping, snow removal, and construction cleaning to maintain your investment."
               />
             </div>
           </div>

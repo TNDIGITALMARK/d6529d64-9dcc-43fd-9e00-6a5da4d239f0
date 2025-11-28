@@ -19,7 +19,7 @@ export function ServiceCard({ icon: Icon, title, description }: ServiceCardProps
         <div className="absolute inset-0 bg-[hsl(45,64%,53%)] blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
       </div>
 
-      <h3 className="text-2xl font-bold mb-4 text-[hsl(0,0%,10%)] group-hover:text-[hsl(43,89%,38%)] transition-colors duration-300">
+      <h3 className="text-lg lg:text-xl font-bold mb-4 text-[hsl(0,0%,10%)] group-hover:text-[hsl(43,89%,38%)] transition-colors duration-300">
         {title}
       </h3>
 

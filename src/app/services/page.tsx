@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Header } from '@/components/omega/header/Header';
 import { Footer } from '@/components/omega/footer/Footer';
-import { Home, Building2, PaintBucket, Hammer, Wrench, DoorOpen } from 'lucide-react';
+import { Home, Building2, PaintBucket, Hammer, Wrench, DoorOpen, Trash2, Square, Sparkles, Trees, KeyRound, Snowflake } from 'lucide-react';
 
 export default function ServicesPage() {
   const services = [
@@ -9,7 +9,6 @@ export default function ServicesPage() {
       icon: Home,
       title: 'Kitchen Remodeling',
       description: 'Transform your kitchen into the heart of your home with custom cabinetry, modern appliances, and elegant countertops.',
-      price: 'Starting at $12,000',
       features: [
         'Custom Cabinet Design',
         'Countertop Installation',
@@ -22,7 +21,6 @@ export default function ServicesPage() {
       icon: PaintBucket,
       title: 'Bathroom Renovations',
       description: 'Create a spa-like retreat with luxury fixtures, modern vanities, and premium tile work.',
-      price: 'Starting at $8,000',
       features: [
         'Modern Vanity Installation',
         'Shower & Tub Upgrades',
@@ -35,7 +33,6 @@ export default function ServicesPage() {
       icon: Building2,
       title: 'Home Additions',
       description: 'Expand your living space with expertly designed and constructed room additions.',
-      price: 'Starting at $25,000',
       features: [
         'Room Additions',
         'Second Story Additions',
@@ -48,7 +45,6 @@ export default function ServicesPage() {
       icon: Hammer,
       title: 'Roofing Services',
       description: 'Protect your investment with quality roofing installation, repairs, and maintenance.',
-      price: 'Starting at $5,000',
       features: [
         'Roof Replacement',
         'Repair Services',
@@ -61,7 +57,6 @@ export default function ServicesPage() {
       icon: Building2,
       title: 'Commercial Buildouts',
       description: 'Professional commercial construction services for offices, retail spaces, and more.',
-      price: 'Custom Pricing',
       features: [
         'Office Space Design',
         'Retail Renovations',
@@ -74,13 +69,96 @@ export default function ServicesPage() {
       icon: DoorOpen,
       title: 'Interior Renovations',
       description: 'Complete interior remodeling services to refresh and modernize your space.',
-      price: 'Starting at $10,000',
       features: [
         'Flooring Installation',
         'Painting & Finishing',
         'Trim & Molding',
         'Drywall Repair',
         'Custom Built-ins',
+      ],
+    },
+    {
+      icon: Trash2,
+      title: 'Demolition Services',
+      description: 'Safe and efficient demolition services for residential and commercial properties, preparing your space for new construction.',
+      features: [
+        'Interior Demolition',
+        'Structural Demolition',
+        'Debris Removal',
+        'Site Clearing',
+        'Hazardous Material Handling',
+      ],
+    },
+    {
+      icon: Square,
+      title: 'Drywall Services',
+      description: 'Professional drywall installation, repair, and finishing for flawless walls and ceilings.',
+      features: [
+        'New Drywall Installation',
+        'Drywall Repair & Patching',
+        'Texture Application',
+        'Ceiling Work',
+        'Finishing & Sanding',
+      ],
+    },
+    {
+      icon: PaintBucket,
+      title: 'Painting Services',
+      description: 'Expert interior and exterior painting services to transform your property with lasting, beautiful finishes.',
+      features: [
+        'Interior Painting',
+        'Exterior Painting',
+        'Cabinet Refinishing',
+        'Staining & Sealing',
+        'Color Consultation',
+      ],
+    },
+    {
+      icon: Sparkles,
+      title: 'Construction Cleaning',
+      description: 'Thorough post-construction cleaning services to prepare your newly built or renovated space for occupancy.',
+      features: [
+        'Post-Construction Cleanup',
+        'Debris Removal',
+        'Window & Glass Cleaning',
+        'Floor Cleaning & Polishing',
+        'Final Detail Cleaning',
+      ],
+    },
+    {
+      icon: Trees,
+      title: 'Landscaping',
+      description: 'Complete landscaping services to enhance your property\'s curb appeal and outdoor living spaces.',
+      features: [
+        'Landscape Design',
+        'Lawn Installation',
+        'Hardscape & Patios',
+        'Planting & Gardens',
+        'Irrigation Systems',
+      ],
+    },
+    {
+      icon: KeyRound,
+      title: 'Property Management',
+      description: 'Comprehensive property management services to maintain and protect your real estate investments.',
+      features: [
+        'Tenant Management',
+        'Property Maintenance',
+        'Rent Collection',
+        'Property Inspections',
+        'Emergency Response',
+      ],
+    },
+    {
+      icon: Snowflake,
+      title: 'Snow Removal',
+      description: 'Reliable snow removal and ice management services to keep your property safe and accessible during winter.',
+      features: [
+        'Snow Plowing',
+        'Sidewalk Clearing',
+        'Ice Management',
+        'Salt & Sand Application',
+        '24/7 Emergency Service',
       ],
     },
   ];
@@ -140,12 +218,6 @@ export default function ServicesPage() {
                   <p className="text-[hsl(33,38%,21%)] mb-5 leading-relaxed font-light">
                     {service.description}
                   </p>
-
-                  <div className="mb-5 pb-5 border-b border-[hsl(43,89%,38%)]/20">
-                    <p className="text-[hsl(43,89%,38%)] font-bold text-xl">
-                      {service.price}
-                    </p>
-                  </div>
 
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, featureIndex) => (
